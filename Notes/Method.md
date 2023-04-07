@@ -58,5 +58,34 @@ public static void main(String[] args) {
     }
 ```
 
+## Method Overriding
+
+```java
+public class Test{
+    public static int add(int a, int b){
+        return a + b;
+    }
+
+    public static double add(double a, double b){
+        return a + b;
+    }
+
+    public static int add(int a, int b, int c){
+        return a + b + c;
+    }
+
+    public static double add(double a, double b, double c){
+        return a + b + c;
+    }
+}
+```
+When calling a method, the Java virtual machine distinguishes methods with
+the same name based on their different parameters.
+
+
+
+
+
+
 
 
