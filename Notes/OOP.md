@@ -38,6 +38,12 @@ A "class" is a blueprint or a template for creating objects. It describes the at
 - one class can create more than one object.
 
 
+# Encapsulation
+
+A mechanism that binds data and the functions that operate on that data, 
+keeping them safe from outside interference and misuse.
+
+
 
 
 
