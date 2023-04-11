@@ -174,6 +174,83 @@ StringBuilder is a character buffer, understand it as a container, this containe
 can store any data type,  but as soon as it enters the container, all become
 strings.
 
+### method
+
+```public StringBuilder append(any type)``` Add data and return the object itself
+
+```public StringBuilder reverse()``` Inverting the contents of the buffer
+
+```public int length()``` return length
+
+```public String toString()``` return the contents of the buffer as String type
+
+The data in StringBuilder, but the method that will be called is not in 
+the StringBuilder, but in the String. How to solve this problem?
+
+It can be converted to String and then call it.
+
+```java
+String result = sb.toString();
+```
+
+### Example
+Requirement: Keyboard in a string, the program determines whether the string is a symmetric string and prints yes or no on the console.
+Example: 123321, 111
+
+```java
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Please enter a string:");
+    String s = sc.nextLine();
+    
+    StringBuilder sb = new StringBuilder(s);
+    sb.reverse();
+    
+    if(s.equals(sb.toString())){
+        System.out.println("yes");
+    }else{
+        System.out.println("no");
+    }
+}
+```
+
+### Example
+
+Requirement: Define a method that splices the data in the int array into a string in the specified format,
+calls the method, and outputs the result in the console.
+
+input: int[] arr = {1,2,3} 
+output: [1,2,3]
+
+```java
+public static String array2String(int[] arr){
+    StringBuilder sb = new StringBuilder("[");
+    
+    for (int i = 0; i < arr.length - 1; i++) {
+        sb.append(arr[i]).append(",");
+    }
+
+    sb.append(arr[arr.length - 1]).append("]");
+
+    return sb.toString();
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
