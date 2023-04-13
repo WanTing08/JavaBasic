@@ -73,6 +73,20 @@ public int[] insertion(int[] arr){
 }
 ```
 
+# Quick Sort
+
+Quick sort is a popular and efficient sorting algorithm that works by
+dividing an array into two smaller sub-arrays, one with elements less 
+than a chosen pivot element, and the other with elements greater than 
+the pivot element. This process is repeated **recursively** on each 
+sub-array until the sub-arrays are small enough to be sorted using a 
+simple algorithm, such as insertion sort.
+
+```java
+
+```
+
+
 
 
 
